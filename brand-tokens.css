@@ -1,0 +1,19 @@
+
+:root {
+  --revel-indigo: #4e56a4; /* source-sampled from official Candidate Journey */
+  --revel-indigo-deep: #2f356f; /* source-sampled from official imagery */
+  --revel-midnight: #160b2b; /* source-sampled from official hero imagery */
+  --revel-violet: #3c1769; /* source-sampled from official hero imagery */
+  --revel-lilac: #a9add9; /* source-sampled from official imagery */
+  --revel-coral: #f15b3a; /* source-sampled from official Candidate Journey */
+  --revel-peach: #ff9a78; /* source-sampled from official hero imagery */
+  --revel-cyan: #4d9dcc; /* source-sampled from official hero imagery */
+  --ink: #171522;
+  --muted: #676477;
+  --line: #dcddea;
+  --paper: #ffffff;
+  --wash: #f4f4fa;
+  --success: #4b8b78; /* candidate-original semantic status */
+  --warning: #c47733; /* candidate-original semantic status */
+  --hold: #a1485d; /* candidate-original semantic status */
+}

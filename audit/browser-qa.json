@@ -1,0 +1,255 @@
+{
+  "method": "Playwright set_content with local assets inlined because managed browser policy blocks loopback and file navigation. Existing screenshot matrix retained under audit/browser.",
+  "results": [
+    {
+      "route": "index.html",
+      "viewport": "desktop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "index.html",
+      "viewport": "laptop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "index.html",
+      "viewport": "tablet",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "index.html",
+      "viewport": "mobile",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "resume.html",
+      "viewport": "desktop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "resume.html",
+      "viewport": "laptop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "resume.html",
+      "viewport": "tablet",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "resume.html",
+      "viewport": "mobile",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "cover-letter.html",
+      "viewport": "desktop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "cover-letter.html",
+      "viewport": "laptop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "cover-letter.html",
+      "viewport": "tablet",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "cover-letter.html",
+      "viewport": "mobile",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "interview-brief.html",
+      "viewport": "desktop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "interview-brief.html",
+      "viewport": "laptop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "interview-brief.html",
+      "viewport": "tablet",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "interview-brief.html",
+      "viewport": "mobile",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "120-day-plan.html",
+      "viewport": "desktop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "120-day-plan.html",
+      "viewport": "laptop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "120-day-plan.html",
+      "viewport": "tablet",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "120-day-plan.html",
+      "viewport": "mobile",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "ai-yield-review.html",
+      "viewport": "desktop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "ai-yield-review.html",
+      "viewport": "laptop",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "ai-yield-review.html",
+      "viewport": "tablet",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    },
+    {
+      "route": "ai-yield-review.html",
+      "viewport": "mobile",
+      "overflow": false,
+      "duplicates": [],
+      "broken_images": [],
+      "bad_links": [],
+      "footer_collisions": [],
+      "console_errors": []
+    }
+  ],
+  "interaction": {
+    "before": "78%",
+    "architecture_after": "46%",
+    "keyboard_selected": "ownership",
+    "diagnosis": "Integration, data, identity, or control debt is consuming expected value."
+  },
+  "reduced_motion": {
+    "scan": "none",
+    "scroll": "auto"
+  }
+}
