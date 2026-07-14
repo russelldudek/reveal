@@ -23,8 +23,8 @@ An interactive Enterprise AI Yield System changes shape across four illustrative
 ## Job posting
 Supplied in chat; no public URL.
 
-## Publication target
-Intended repository name: `revel`. The current `reveal` repository is the populated staging target; it must be renamed to `revel`, then GitHub Pages must be activated before live links can be verified.
+## Hiring-team site
+The campaign is published from the `reveal` repository and uses one candidate-facing URL: `https://russelldudek.github.io/reveal/`. General portfolio and GitHub profile links are intentionally omitted from the application documents.
 
 ## Independence
 The Revel IT mark and imagery are used only for nominative identification. This is independent candidate work and is not sponsored or endorsed by Revel IT or its confidential client.
