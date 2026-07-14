@@ -1,30 +1,43 @@
-name: Candidate campaign build
+name: Consolidate hiring-team campaign links
 on:
-  workflow_dispatch:
-  push:
+  pull_request:
     branches: [main]
-    paths:
-      - '*.html'
-      - '*.css'
-      - '*.js'
-      - 'scripts/build_artifacts.py'
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
 permissions:
   contents: write
+  pull-requests: read
 jobs:
-  build:
-    if: github.actor != 'github-actions[bot]'
+  consolidate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: sudo apt-get update && sudo apt-get install -y fonts-lato libcairo2 libpango-1.0-0 libpangoft2-1.0-0 libgdk-pixbuf-2.0-0 shared-mime-info
+      - run: sudo apt-get update && sudo apt-get install -y fonts-lato libcairo2 libpango-1.0-0 libpangoft2-1.0-0 libgdk-pixbuf-2.0-0 shared-mime-info poppler-utils
       - run: python -m pip install --upgrade pip && pip install weasyprint==68.0 pillow
+      - run: python scripts/consolidate_candidate_links.py
       - run: python scripts/build_artifacts.py
+      - run: |
+          set -e
+          test "$(pdfinfo docs/Russell-Dudek-Revel-IT-Resume.pdf | awk '/^Pages:/ {print $2}')" = "2"
+          test "$(pdfinfo docs/Russell-Dudek-Revel-IT-Cover-Letter.pdf | awk '/^Pages:/ {print $2}')" = "1"
+          test "$(pdfinfo docs/Russell-Dudek-Revel-IT-Interview-Brief.pdf | awk '/^Pages:/ {print $2}')" = "4"
+          test "$(pdfinfo docs/Russell-Dudek-Revel-IT-120-Day-Plan.pdf | awk '/^Pages:/ {print $2}')" = "3"
+          test "$(pdfinfo docs/Russell-Dudek-Revel-IT-AI-Yield-Review.pdf | awk '/^Pages:/ {print $2}')" = "1"
+          ! grep -R 'github.com/russelldudek' -- *.html README.md campaign-audit.md audit/pdf-text
+          ! grep -R 'href="https://russelldudek.github.io/"' -- *.html
+          for pdf in docs/*.pdf; do
+            pdftotext "$pdf" - | grep -q 'russelldudek.github.io/reveal/'
+            ! pdftotext "$pdf" - | grep -q 'github.com/russelldudek'
+          done
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/brand docs
-          git diff --cached --quiet || git commit -m "Refresh campaign assets and PDFs"
-          git push
+          git add -A
+          git diff --cached --quiet || git commit -m "Use one hiring-team-facing campaign site"
+          git push origin HEAD:main
